@@ -1,12 +1,10 @@
-const path = require ('path');
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
   entry: {
-    index: './src/main.js',
-    style: './src/assets/styles.css',
-
+    index: './src/main.js',  // Eliminamos la entrada de styles.css
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -28,8 +26,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-
+        use: ['style-loader', 'css-loader'], // Webpack manejará CSS correctamente
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -53,7 +50,6 @@ module.exports = {
           },
         },
       },
-
     ],
   },
   optimization: {
