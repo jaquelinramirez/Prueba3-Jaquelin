@@ -36,42 +36,90 @@ Prerequisites To run this project you need the following tools:
 
 [VS Code ] [Git and GitHub ] [linters ] [Webpack ] [Azure ] Setup Clone this repository to your desired folder:
 
-cd FORMULARIO_SENA2 git clone https://github.com/jaquelinramirez/Prueba3-Jaquelin
+cd Prueba3-Jaquelin git clone https://github.com/jaquelinramirez/Prueba3-Jaquelin
 
 Install Install this project with:
 
 Webhint:
 
-npm install --save-dev hint@7.x Stylelint:
+### Install
 
-npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x Eslint
+Install this project with:
 
-npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x Webpack
+Lighthouse run
+sh
+    npm install -g @lhci/cli@0.7.x
 
-npm init -y npm install webpack webpack-cli --save-dev Webpack Css loader
+Webhint:
+sh
+     npm install --save-dev hint@7.x
 
-npm install --save-dev style-loader css-loader Webpack html loader
+Stylelint:
+sh
+     npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
 
-npm install --save-dev html-loader Webpack html plugin
 
-npm install --save-dev html-webpack-plugin Webpack dev server
+Eslint
+sh
+     npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
 
-npm install --save-dev webpack-dev-server Babel Dependency loader
+Webpack
+sh
+     npm init -y
+     npm install webpack webpack-cli --save-dev
 
-npm install --save-dev babel-loader Usage To run locally run the following command:
 
-Development mode npm run build-dev
+Webpack Css loader
+sh
+     npm install --save-dev style-loader css-loader
 
-Production mode "build": "webpack --mode=production", "start": "node server.js" Run tests To run tests, run the following command:
+Webpack html loader
+sh
+     npm install --save-dev html-loader
 
-To test the Stylelint linter:
 
-npx stylelint "*/.{css,scss}" To test the Webhint:
+Webpack html plugin
+sh
+     npm install --save-dev html-webpack-plugin
 
-npx hint . To test the ESLint linter:
 
-npx eslint . Authors Jaquelin Ramirez
+Webpack dev server
+sh
+     npm install --save-dev webpack-dev-server
 
+Babel Dependency loader
+sh
+     npm install --save-dev babel-loader
+
+Minify CSS: To reduce the size of your CSS file by removing unnecessary characters such as whitespace and comments. 
+sh
+     npm install --save-dev css-minimizer-webpack-plugin
+
+Split Js : If your JS file is large, splitting it into smaller modular files can help improve the loading time. 
+sh
+     npm install --save-dev terser-webpack-plugin
+
+
+Split CSS: If your CSS file is large, splitting it into smaller modular files can help improve the loading time. 
+sh
+     npm install mini-css-extract-plugin --save-dev
+
+Babel core
+sh
+     npm install --save-dev @babel/core @babel/preset-env
+
+Express and body-parser
+sh
+     npm install --save express body-parser
+
+
+Concurrent, the npm package for running multiple commands in parallel
+sh
+     npm install --save-dev concurrently
+
+
+
+### Usage
 👤 Author1
 
 GitHub: https://github.com/jaquelinramirez
